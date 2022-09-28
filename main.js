@@ -88,3 +88,9 @@ let editTask = (e) => {
 
   deleteTask(e);
 };
+
+(() => {
+  data = JSON.parse(localStorage.getItem("data")) || [];
+  console.log(data);
+  createTasks();
+})();
